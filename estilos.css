@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    font-family: 'Poppins', sans-serif;
+    width: 70%;
+    height: 80%;
+    background-color:white;
+    box-shadow: 3px 10px 16px 2px #00000033;
+    display: flex;
+    position: absolute;
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+
+.panel-texto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #277eff;
+    position: relative;
+    border-radius: 50px 0 0 50px ;
+
+}
+.tarjeta-formu{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    border-radius: 0 50px 50px 0 ;
+}
+.panel-texto::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 40px #f7fef8 solid ;
+    border-radius: 50%;
+    bottom: 40px;
+    right: -110px;
+}
+
+.tarjeta-formu::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 40px #eaeeef solid;
+    border-radius: 40%;
+    top: 40px;
+    right: -180px;
+    transform: rotate(45deg);
+}
+
+main{
+    background-color: #edecf1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+.titulo-azul h1{
+    padding: 20px;
+    position: absolute;
+    top: 25%;
+    color: white;
+    text-align: left;
+    width: 80%; 
+    display: inline-block;  
+}
+
+.titulo-formu h1{
+    padding: 20px;
+    position: absolute;
+    top: 25%;
+    color: black  ;
+    text-align: left;
+    display: inline-block;  
+}
+
+.titulo-formu h1::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #257efd;
+    border-radius: 2px;
+    left: 40px;
+    top: 80%;
+}
+.titulo-azul h1::after{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 6px;
+    background-color: white;
+    border-radius: 2px;
+    left: 25px;
+    top: 80%;
+}
+.descripcion{
+    padding-left: 15px;
+    font-size: 18px;
+    text-align: left;
+    color: white;
+    width: 75%;
+    
+}
+.btn-know{
+    position: absolute;
+    background-color: #257efd;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    border: white 2px solid;
+    top: 65%;
+    left: 17%;
+}
+.btn-know a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.entradas{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 60%;
+}
+.usuario{
+    margin-bottom: 45px;
+    padding: 15px;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    box-shadow: none;
+}
+.contraseña{
+    padding: 15px;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    box-shadow: none;
+}
+.btn-acceso{
+    position: absolute;
+    background-color: #277dfd;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 270px;
+    height: 55px;
+    border: #257efd 2px solid;
+    bottom: 0%;
+    left: 30%;
+}
+.btn-acceso a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
